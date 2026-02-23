@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Project Aura </title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+
+header {
+    padding: 100px 20px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+.download-box {
+    margin-top: 50px;
+    padding: 50px 30px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.download-box:hover {
+    transform: translateY(-5px);
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 22px 55px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 60px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+
+.launcher-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+.launcher-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.08);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.launcher-btn:hover::before {
+    top: -20%;
+    left: -20%;
+}
+
+/* Download Build */
+.build-btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 8px 35px rgba(0,198,255,0.5);
+}
+
+.build-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 50px rgba(0,198,255,0.7);
+}
+
+
+.discord-btn {
+    background: linear-gradient(135deg, #7289da, #4c6ef5);
+    box-shadow: 0 8px 25px rgba(114,137,218,0.5);
+    cursor: pointer;
+    color: #fff;
+}
+
+.discord-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(114,137,218,0.7);
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 25px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* --- Responsive --- */
+@media(max-width: 700px){
+    h1 { font-size: 48px; }
+    .subtitle { font-size: 18px; }
+    .download-btn { font-size: 20px; padding: 18px 40px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Project Aura</h1>
+    <p class="subtitle">Old Emulator</p>
+</header>
+
+<section class="section">
+    <h2>What is OGFN?</h2>
+    <p>
+        Old fortnite is just fortnite using old fortnite servers but, not fortnite servers (Aura's own servers) and has custom weapons (Exotics by bengio)
+    </p>
+
+    <div class="features">
+        <div class="card">
+            <h3>Custom Launcher</h3>
+            <p>Optimized launcher, customized for fortnite purposes!</p>
+        </div>
+
+        <div class="card">
+            <h3>Backend</h3>
+            <p>Backend is used correctly not overused and other stuff.</p>
+        </div>
+
+        <div class="card">
+            <h3>VPS</h3>
+            <p>VPS is secured and used finely and correctly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Launcher (Coming Soon) -->
+<section class="section">
+    <div class="download-box">
+        <h2>Launcher</h2>
+        <p>Coming Soon – Version 1.0</p>
+        <a class="download-btn launcher-btn">Launcher (Soon)</a>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="download-box">
+        <h2>Download Build</h2>
+        <p><strong>File Size:</strong> 76 GB</p>
+        <p>Fortnite Version - v13.40</p>
+       
+        <a href="https://forcedfnbuilds.website/13.40.rar" class="download-btn build-btn">Download Build</a>
+    </div>
+</section>
+
+<!-- Join Discord -->
+<section class="section">
+    <div class="download-box">
+        <h2>Join Our Community</h2>
+        
+        <a href="https://discord.gg/2tZPY5xatk" class="download-btn discord-btn">Join Discord</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 OGFN Project. All rights reserved.
+</footer>
+
+</body>
+</html>
